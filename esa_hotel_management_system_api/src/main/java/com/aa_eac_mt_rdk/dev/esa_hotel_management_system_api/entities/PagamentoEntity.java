@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -17,8 +17,7 @@ public class PagamentoEntity extends AbstractEntity {
     private String tipo;
     private Double total;
     
-    @Temporal(TemporalType.DATE)
-    private Date dataPagamento;
+    private LocalDateTime dataPagamento;
     
     @ManyToOne
     @JoinColumn(name = "reserva_id")

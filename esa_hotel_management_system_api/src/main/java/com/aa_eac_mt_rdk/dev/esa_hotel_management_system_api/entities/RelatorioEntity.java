@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -16,8 +16,7 @@ import java.util.Date;
 public class RelatorioEntity extends AbstractEntity {
     private String tipoRelatorio;
     
-    @Temporal(TemporalType.DATE)
-    private Date dataGerado;
+    private LocalDateTime dataGerado;
     
     private String conteudo;
 }
