@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -14,16 +14,13 @@ import java.util.Date;
 @Entity
 @Table(name = "t_reserva")
 public class ReservaEntity extends AbstractEntity {
-    @Temporal(TemporalType.DATE)
-    private Date dataInicio;
-    
-    @Temporal(TemporalType.DATE)
-    private Date dataFim;
-    
+    private LocalDateTime dataInicio;
+    private LocalDateTime dataFim;
+
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private ClientEntity cliente;
-    
+
     @ManyToOne
     @JoinColumn(name = "quarto_id")
     private QuartoEntity quarto;
