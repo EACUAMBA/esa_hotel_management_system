@@ -1,0 +1,45 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^usuarios(.*)$ index.php?pagina=usuarios [L]
+RewriteRule ^hospedes(.*)$ index.php?pagina=hospedes [L]
+RewriteRule ^funcionarios(.*)$ index.php?pagina=funcionarios [L]
+RewriteRule ^fornecedores(.*)$ index.php?pagina=fornecedores [L]
+
+
+RewriteRule ^categorias_quartos(.*)$ index.php?pagina=categorias_quartos [L]
+RewriteRule ^formas_pgto(.*)$ index.php?pagina=formas_pgto [L]
+RewriteRule ^cargos(.*)$ index.php?pagina=cargos [L]
+RewriteRule ^quartos(.*)$ index.php?pagina=quartos [L]
+RewriteRule ^grupos(.*)$ index.php?pagina=grupos [L]
+RewriteRule ^acessos(.*)$ index.php?pagina=acessos [L]
+
+
+RewriteRule ^reservas(.*)$ index.php?pagina=reservas [L]
+RewriteRule ^filtrar_reservas(.*)$ index.php?pagina=filtrar_reservas [L]
+
+RewriteRule ^pagar(.*)$ index.php?pagina=pagar [L]
+RewriteRule ^receber(.*)$ index.php?pagina=receber [L]
+RewriteRule ^compras(.*)$ index.php?pagina=compras [L]
+
+RewriteRule ^categorias_produtos(.*)$ index.php?pagina=categorias_produtos [L]
+RewriteRule ^produtos(.*)$ index.php?pagina=produtos [L]
+RewriteRule ^entradas(.*)$ index.php?pagina=entradas [L]
+RewriteRule ^saidas(.*)$ index.php?pagina=saidas [L]
+RewriteRule ^estoque_baixo(.*)$ index.php?pagina=estoque_baixo [L]
+
+RewriteRule ^categorias_servicos(.*)$ index.php?pagina=categorias_servicos [L]
+RewriteRule ^servicos(.*)$ index.php?pagina=servicos [L]
+
+RewriteRule ^vendas_produtos(.*)$ index.php?pagina=vendas_produtos [L]
+RewriteRule ^vendas_servicos(.*)$ index.php?pagina=vendas_servicos [L]
+RewriteRule ^lista_vendas(.*)$ index.php?pagina=lista_vendas [L]
+RewriteRule ^lista_servicos(.*)$ index.php?pagina=lista_servicos [L]
+
+RewriteRule ^dados_site(.*)$ index.php?pagina=dados_site [L]
+RewriteRule ^banners_site(.*)$ index.php?pagina=banners_site [L]
+RewriteRule ^especificacoes(.*)$ index.php?pagina=especificacoes [L]
+
+RewriteRule ^marketing(.*)$ index.php?pagina=marketing [L]
+RewriteRule ^calendario(.*)$ index.php?pagina=calendario [L]
